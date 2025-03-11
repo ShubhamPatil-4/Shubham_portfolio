@@ -1,243 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
-	<link rel="stylesheet" type="text/css" href="style.css
-	">
-	  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<title>Shubham Porfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: #f8f9fa;
+        }
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .section {
+            padding: 40px 20px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .hero img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
 </head>
-<body >
-	
-	<div class="navigation-bar">
-		<nav class="navbar navbar-expand-lg navbar-light ">
-  <a class="navbar-brand" href="#"><span class="logo">Shubham</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#home"><span class="mymenus">Home</span> <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about"><span class="mymenus">About</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#skills"><span class="mymenus">Skills</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projects"><span class="mymenus">Project</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact"><span class="mymenus">Contact</span></a>
-      </li>
-     
-    </ul>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
-  </div>
-</nav>
-	<!-- navdiv closed here -->
-	</div>
-	<div class="allsections">
-		<div class="section home-section" id="home">
-			<div class="myinfo">
-				<span class="info-home">Hello</span><br>
-				<span class="info-home">My name is </span>
-				<div class="logo myname" data-aos="slide-right">Shubham Patil</div>
-				<div class="info-home">I am a </div>
-				<span class="fsjd">Full Stack Java Developer</span>
-				<div>
-					<a href="Shubham_Resume.pdf"><button type="button" class="rsm">RESUME</button></a>
-				</div>
-			</div>
-		</div>
-		<div class="section about-section" id="about">
-			<div class="myimg aboutsect" align="center">
-				<img src="C:\Users\win-10\Desktop\shubham patil\shubham patil Doc\Shubham photo.jpeg" style="margin-top:50px ;border-radius: 35%;box-shadow: 0px 0px 30px grey;" height="350px">
-			</div>
-			<div class="cobj aboutsect">
-				<h1 align="center" class="logo">ABOUT</h1>
-				<p class="carrer">Exceptionally focused and reliable Entry Level Java Developer with an outstanding work ethic and computer language knowledge base. Adept at explaining complex computer development concepts and processes to a variety of professional and lay audiences in a clear and accessible manner. Able to work well independently or as part of a professional computer program development team.</p>
-			</div>
-		</div>
-		<div class="section skills-section" id="skills" align="center">
-			<h1 class="logo" >SKILLS SECTION</h1>
-			<table class="tbl" width="90%"  height=400px>
-				<tr class="rows">
-					<td align="center" valign="top" width="50%" height="200px">
-						<div>
-							<h3 class="skill-head">Languages</h3>
-							<p class="skillset">
-								Core Java, JavaScript, HTML, CSS, XML, SQL, JSON, C#
-							</p>
-						</div>
-					</td>
-					<td align="center" valign="top">
-						<div>
-							<h3 class="skill-head">Api's & Frameworks</h3>
-							<p class="skillset"> Collection, Stream, Restful API,JDBC, JSP, Servlets, HIbernates, Bootstrap, React JS, Spring</p>
-						</div>
-					</td>
-				</tr>
-				<tr class="rows">
-					<td align="center" valign="top">
-						<div>
-							<h3 class="skill-head">Tools & Servers</h3>
-							<p class="skillset">Eclipse , VS Code, Sublime, JIRA, Postman, FireFlink, Github, Maven, MySQL, Oracle</p>
-						</div>
-					</td>
-					<td align="center" valign="top">
-						<div>
-							<h3 class="skill-head">Operating System</h3>
-							<p class="skillset">Windows, Linux, Ubuntu, iOS, Andriod</p>
-						</div>
-					</td>
-				</tr>
-			</table>
-		</div>
-		<div class="section project-section" id="projects" align="center">
-			<h1 class="logo">PROJECT SECTION</h1>
-			<div class="all-projects" align="ce">
-					<div class="card-deck">
-  <div class="card" data-aos="slide-right">
-   <center>
-   	 <img src="https://cdn.iconscout.com/icon/free/png-256/free-calculator-716-461701.png" class="card-img-top" alt="calculator">
-   </center>
-    <div class="card-body" >
-      <h5 class="card-title">CALCULATOR</h5>
-      <p class="card-text">A calculator is a device that performs arithmetic operations on numbers. Basic calculators can do only addition, subtraction, multiplication and division mathematical calculations.</p>
-     <a href=" https://shubhampatil-4.github.io/Calculater1/">Click Me</a>
-    </div>
+    <section class="hero">
+        <img src="profile.jpg" alt="Profile Picture">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Web Developer | Designer | Programmer</p>
+    </section>
 
-  </div>
-  <div class="card" data-aos="slide-down">
-    <center>
-    	<img src="https://i.pinimg.com/originals/e7/7a/60/e77a6068aa8bb2731e3b6d835c09c84c.gif" class="card-img-top" alt="...">
-    </center>
-    <div class="card-body">
-      <h5 class="card-title">WetherAPP</h5>
-      <p class="card-text">The Weather App project is a web application that leverages HTML, CSS, and JavaScript to fetch weather data from a weather API and display current weather conditions and forecasts for a specific location.</p>
-     <a href="https://shubhampatil-4.github.io/WetherAPP/">Click Me</a>
-    </div>
-  </div>
-  <div class="card" data-aos="slide-left">
-   <center>
-   	 <img src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/multimedia-audio-player-icon.png" class="card-img-top" alt="...">
-   </center>
-    <div class="card-body">
-      <h5 class="card-title">Clock</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <a href="https://shubhampatil-4.github.io/Clock/">Click Me</a>
-    </div>
-  </div>
-</div>
-				<!-- project div ends -->
-			</div>
-			<div class="all-projects" align="ce">
-					<div class="card-deck">
-  <div class="card" data-aos="slide-right">
-   <center>
-   	 <img src="https://static-00.iconduck.com/assets.00/accessories-text-editor-icon-2048x2048-hca32kld.png" class="card-img-top" alt="calculator">
-   </center>
-    <div class="card-body">
-      <h5 class="card-title">STUDENT RESULT MANAGEMENT SYSTEM</h5>
-      <p class="card-text">The main objective of the project is to provide the examination result to the student in a simple way.This project is useful for students and institutions for getting the results in simple manner.</p>
-     
-    </div>
-  </div>
-  <div class="card" data-aos="slide-up">
-    <center>
-    	<img src="https://globaleducation.s3.ap-south-1.amazonaws.com/globaledu/gif/online-exam.gif" class="card-img-top" alt="...">
-    </center>
-    <div class="card-body">
-      <h5 class="card-title">ONLINE EXAMINATION SYSTEM</h5>
-      <p class="card-text">Online examination system is a non removable examination pattern of today’s life. We need more time saving and more accurate examination system as the number of applicants is increasing day by day.</p>
-     
-    </div>
-  </div>
-  <div class="card" data-aos="slide-left">
-   <center>
-   	 <img src="https://cdn-icons-png.flaticon.com/512/10743/10743163.png" class="card-img-top" alt="...">
-   </center>
-    <div class="card-body">
-      <h5 class="card-title">EMPLOYEE MANAGEMENT</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      
-    </div>
-  </div>
-</div>
-				<!-- project div ends -->
-			</div>
-		</div>
-		<div class="section contact-section" id="contact" align="center">
-			<h1 class="logo">CONTACT SECTION</h1>
-			<table class="cnt-tbl"  height="500px" width="90%">
-				<tr align="center" valign="top">
-					<td width="50%">
-						<div class="info1">
-							<b style="color: red;" style="width: 10px;"><u>MY INFO</u></b>
-							<br><br>
-							<b>
-							<p>Shubham Patil</p>
-							<p> <img src="https://cdn.pixabay.com/animation/2023/04/06/16/10/16-10-43-442_512.gif" width="40px">
-							AT Post-Gavhan Tal-Tasgaon Dist-Sangli</p>
-							<p> <img src="https://miro.medium.com/v2/resize:fit:700/1*W-3dwJCL27QynV4XohyvDQ.gif" width="40px">shubham@gmail.com</p>
-							<p><img src="https://w7.pngwing.com/pngs/937/534/png-transparent-iphone-computer-icons-telephone-call-blue-angle-electronics-thumbnail.png"  width="19px"> 7559277551</p></b>
-							
-						</div>
-					</td>
-					<td>
-						<div class="contact-form">
-								<form>
-<form>
-	<div class="form-group row" >
-  
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputName" placeholder="Name">
-    </div>
-  </div>
-  <div class="form-group row">
- 
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Email Id">
-    </div>
-  </div>
-  <div class="form-group row">
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputComment" placeholder="Comment" style="height: 120px; width: 480px">
-    </div>
-  </div>
-  
- 
-  <div class="form-group row">
-    <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">CONTACT US</button>
-    </div>
-  </div>
-</form>
-</form>
+    <section id="about" class="section container">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
+    </section>
 
-							<!-- contact form ends here -->
-						</div>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
+    <section id="projects" class="section container">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="project1.jpg" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Description of project 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="project2.jpg" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Description of project 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="project3.jpg" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Description of project 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="contact" class="section container">
+        <h2>Contact</h2>
+        <p>Email: example@example.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+    
+    <footer class="text-center py-3 bg-light">
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
 
-	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-    	duration: 2000,
-    });
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
